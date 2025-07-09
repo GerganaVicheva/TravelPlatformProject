@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             sendResponse(false, "Database connection failed: #dkljasdaklj", null, 500);
         }
         
-        $result = $conn->query("SELECT * FROM contacts ORDER BY id ASC");
+        $result = $conn->query("SELECT * FROM contacts ORDER BY id DESC");
         
         if ($result) {
             $contacts = [];
