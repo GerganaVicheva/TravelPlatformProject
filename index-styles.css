@@ -318,3 +318,182 @@ header {
     background-color: var(--green);
     transform: scale(1.1);
 }
+
+
+/* Contacts List Section */
+.contacts-section {
+    background: linear-gradient(135deg, var(--brown) 0%, #2c2e2a 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.contacts-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(108, 146, 131, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.contacts-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    background: rgba(105, 167, 217, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.contacts-section .section-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.contacts-section .section-title i {
+    color: var(--green);
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.loading-spinner .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3em;
+}
+
+/* Contact Item */
+.contact-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(108, 146, 131, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border-color: var(--green);
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Contact Details */
+.contact-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--brown);
+    margin-bottom: 8px;
+}
+
+.contact-email {
+    font-size: 1rem;
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.contact-email i {
+    opacity: 0.8;
+}
+
+.contact-message {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: var(--smokey-white);
+    border-radius: 10px;
+    border-left: 4px solid var(--green);
+}
+
+.contact-date {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+}
+
+.contact-date i {
+    opacity: 0.7;
+}
+
+/* Badge */
+.contact-item .badge {
+    background: var(--green) !important;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* No Contacts State */
+.no-contacts {
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.no-contacts i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.no-contacts h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.no-contacts p {
+    font-size: 1.1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Animation for new items */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-item {
+    animation: slideInUp 0.5s ease-out;
+}
+
+/* Staggered animation for multiple items */
+.contact-item:nth-child(1) { animation-delay: 0.1s; }
+.contact-item:nth-child(2) { animation-delay: 0.2s; }
+.contact-item:nth-child(3) { animation-delay: 0.3s; }
+.contact-item:nth-child(4) { animation-delay: 0.4s; }
+.contact-item:nth-child(5) { animation-delay: 0.5s; }
