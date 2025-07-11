@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 }
 
 // Query all contacts
-$sql = "SELECT id, name, email, message, submitted_at FROM contacts ORDER BY submitted_at DESC";
+$sql = "SELECT id, name, email, message, created_at FROM contacts ORDER BY created_at DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -32,7 +32,7 @@ if ($result->num_rows > 0) {
         echo "<td>" . htmlspecialchars($row['name']) . "</td>";
         echo "<td>" . htmlspecialchars($row['email']) . "</td>";
         echo "<td>" . nl2br(htmlspecialchars($row['message'])) . "</td>";
-        echo "<td>" . htmlspecialchars($row['submitted_at']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['created_at']) . "</td>";
         echo "</tr>";
     }
 
