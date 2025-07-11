@@ -1,15 +1,15 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'test_base';
-$user = 'root';
-$pass = '';
+// $host = 'localhost';
+// $dbname = 'test_base';
+// $user = 'root';
+// $pass = '';
 
-// Database configuration
-// $host = 'host'; //'localhost';
-// $dbname = 'travelplatformproject_db'; //'test_base';
-// $user = 'travelplatformproject_u'; //'root';
-// $pass = '17LvofAq0gXjDDH'; //'';
+//Database configuration
+$host = 'host'; //'localhost';
+$dbname = 'travelplatformproject_db'; //'test_base';
+$user = 'travelplatformproject_u'; //'root';
+$pass = 'l7LvofAq0gXjDDH'; //'';
 
 $conn = new mysqli($host, $user, $pass, $dbname);
 
