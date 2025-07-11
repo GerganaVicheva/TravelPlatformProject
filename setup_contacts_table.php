@@ -3,7 +3,7 @@
 $host = 'localhost'; //'localhost';
 $dbname = 'travelplatformproject_db'; //'test_base';
 $user = 'travelplatformproject_u'; //'root';
-$pass = '17LvofAq0gXjDDH'; //'';
+$pass = 'l7LvofAq0gXjDDH'; //'';
 
 // Connect to MySQL
 $conn = new mysqli($host, $user, $pass, $db);
