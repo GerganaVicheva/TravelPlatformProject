@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 // Database configuration
 $host = 'localhost'; //'localhost';
-$dbname = 'travelplatformproject_db'; //'test_base';
+$db = 'travelplatformproject_db'; //'test_base';
 $user = 'travelplatformproject_u'; //'root';
 $pass = 'l7LvofAq0gXjDDH'; //'';
 
