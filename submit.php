@@ -15,10 +15,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 // Database configuration
-$host = 'localhost';
-$dbname = 'test_base';
-$user = 'root';
-$pass = '';
+$host = 'localhost'; //'localhost';
+$dbname = 'travelplatformproject_db'; //'test_base';
+$user = 'travelplatformproject_u'; //'root';
+$pass = '17LvofAq0gXjDDH'; //'';
 
 // Function to send JSON response
 function sendResponse($success, $message, $data = null, $statusCode = 200) {

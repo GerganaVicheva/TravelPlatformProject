@@ -270,7 +270,7 @@ include "common/header_end.php";
                     </form>
                     <form action="get_contacts.php" method="GET">
                         <button class="btn w-100 mt-2"
-                            style="background:#6C9283; color:#EDF4EE; border-radius:4px;">View all contacts
+                            style="background:#6C9283; color:#EDF4EE; border-radius:4px;">View all messages
                         </button>
                     </form>
                 </div>
