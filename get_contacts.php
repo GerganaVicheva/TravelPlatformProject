@@ -6,7 +6,7 @@
 // $pass = '';
 
 //Database configuration
-$host = 'host'; //'localhost';
+$host = 'localhost'; //'localhost';
 $dbname = 'travelplatformproject_db'; //'test_base';
 $user = 'travelplatformproject_u'; //'root';
 $pass = 'l7LvofAq0gXjDDH'; //'';
